@@ -11,14 +11,14 @@ export const metadata: Metadata = {
     title: "CSMP 3",
     description: "Bem-vindo(a) ao CSMP 3",
     url: "https://csmp.vercel.app",
-    images: ["/assets/csmp3-logo.png"],
+    images: ["/assets/banner.png"],
     siteName: "AxolCore",
   },
   twitter: {
     title: "CSMP 3",
     description: "Bem-vindo(a) ao CSMP 3",
     card: "summary_large_image",
-    images: ["/assets/csmp3-logo.png"]
+    images: ["/assets/banner.png"]
   }
 };
 
