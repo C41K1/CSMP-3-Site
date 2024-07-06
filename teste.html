@@ -1,20 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <div style="z-index: 100; width: 100vw; position: fixed; top: 0; left: 0; right: 0; background-color: #00000022; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;" class="md:flex-row">
+    <style>
+        @media screen and (max-width: 767px) {
+            #csmp_container {
+                flex-direction: column;
+            }
+            #mcmap {
+                height: 82vh;
+                margin-top: 18vh;
+            }
+            .csmp_link {
+                height: 5vh !important;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            #csmp_container {
+                flex-direction: row;
+            }
+            #mcmap {
+                height: 87vh;
+                margin-top: 13vh;
+            }
+            .csmp_link {
+                height: 13vh !important;
+            }
+        }
+
+        .csmp_link:hover {
+            color: #FFF;
+            transform: scale(1.25);
+            transition-duration: 500ms;
+        }
+    </style>
+    <div id="csmp_container"
+        style="z-index: 100; width: 100vw; position: fixed; top: 0; left: 0; right: 0; background-color: #00000022; display: flex; align-items: center; justify-content: space-evenly;">
         <img style="height: 10vh; width: auto; margin: 1.5vh 0;" src="/images/icons/csmp-logo.png" alt="csmp logo">
-        <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100vw;" className="md:w-[50vw]">
-            <a style="display: flex; flex: 1 1 auto; height: 13vh; align-items: center; justify-content: center; color: #AAA; text-decoration: none; font-size: medium;" className="hover:text-[#FFF] hover:scale-125 duration-500" href="https://csmp.vercel.app">Home</a>
-            <a style="display: flex; flex: 1 1 auto; height: 13vh; align-items: center; justify-content: center; color: #AAA;" className="hover:text-[#FFF] hover:scale-125 duration-500" href="https://discord.gg/JUNynDaS4G" target="_blank">Discord</a>
-            <a style="display: flex; flex: 1 1 auto; height: 13vh; align-items: center; justify-content: center; color: #AAA;" className="hover:text-[#FFF] hover:scale-125 duration-500" href="https://csmp.vercel.app/instalador">Instalador</a>
-            <a style="display: flex; flex: 1 1 auto; height: 13vh; align-items: center; justify-content: center; color: #AAA;" className="hover:text-[#FFF] hover:scale-125 duration-500" href="http://enx-cirion-27.enx.host:10100/?worldname=world&mapname=surface&zoom=4">Mapa</a>
+        <div id="csmp_navbar"
+            style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100vw;"
+            className="md:w-[50vw]">
+            <a class="csmp_link"
+                style="display: flex; flex: 1 1 auto; align-items: center; justify-content: center; color: #AAA; text-decoration: none; font-size: medium;"
+                className="hover:text-[#FFF] hover:scale-125 duration-500" href="https://csmp.vercel.app">Home</a>
+            <a class="csmp_link"
+                style="display: flex; flex: 1 1 auto; align-items: center; justify-content: center; color: #AAA; text-decoration: none; font-size: medium;"
+                className="hover:text-[#FFF] hover:scale-125 duration-500" href="https://discord.gg/JUNynDaS4G"
+                target="_blank">Discord</a>
+            <a class="csmp_link"
+                style="display: flex; flex: 1 1 auto; align-items: center; justify-content: center; color: #AAA; text-decoration: none; font-size: medium;"
+                className="hover:text-[#FFF] hover:scale-125 duration-500"
+                href="https://csmp.vercel.app/instalador">Instalador</a>
+            <a class="csmp_link"
+                style="display: flex; flex: 1 1 auto; align-items: center; justify-content: center; color: #AAA; text-decoration: none; font-size: medium;"
+                className="hover:text-[#FFF] hover:scale-125 duration-500"
+                href="http://enx-cirion-27.enx.host:10100/?worldname=world&mapname=surface&zoom=4">Mapa</a>
         </div>
     </div>
 </body>
-</html>
 
+</html>

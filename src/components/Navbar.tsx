@@ -11,7 +11,7 @@ export default function Navbar() {
             <div className="flex flex-row items-center justify-between w-screen md:w-[50vw]">
                 <Link className="flex flex-auto h-[13vh] items-center justify-center text-[#AAA] hover:text-[#FFF] hover:scale-125 duration-500" href={"/"}>Home</Link>
                 <Link className="flex flex-auto h-[13vh] items-center justify-center text-[#AAA] hover:text-[#FFF] hover:scale-125 duration-500" href={"https://discord.gg/JUNynDaS4G"} target="_blank">Discord</Link>
-                <Link className="flex flex-auto h-[13vh] items-center justify-center text-[#AAA] hover:text-[#FFF] hover:scale-125 duration-500" href={"/instalador"}>Instalador</Link>
+                <Link className="flex flex-auto h-[13vh] items-center justify-center text-[#AAA] hover:text-[#FFF] hover:scale-125 duration-500" href={"/instalador"}>Como Jogar</Link>
                 <Link className="flex flex-auto h-[13vh] items-center justify-center text-[#AAA] hover:text-[#FFF] hover:scale-125 duration-500" href={"http://enx-cirion-27.enx.host:10100/?worldname=world&mapname=surface&zoom=4"}>Mapa</Link>
             </div>
         </div>
