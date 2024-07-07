@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "Bem-vindo(a) ao CSMP 3",
     url: "https://csmp.vercel.app",
     images: ["/assets/banner.png"],
-    siteName: "AxolCore",
+    siteName: "CSMP 3",
   },
   twitter: {
     title: "CSMP 3",
