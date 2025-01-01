@@ -25,7 +25,7 @@ export default function Corpo({ titulo, texto, CTA_label, CTA_link, imagem, imag
                     <div className={`flex flex-col flex-1 items-center justify-center mobile:order-last ${invertido && "order-last"}`}>
                         <label className="text-4xl font-bold text-center">{titulo}</label>
                         <p className="md:w-[30vw] my-[3vh] text-lg text-center mobile:w-[90vw]">{texto}</p>
-                        <Link className={`p-3 rounded-lg hover:scale-110 hover:shadow-xl duration-700 animate-pulse active:bg-transparent border border-[#00000022] shadow-sm shadow-black mobile:mb-4`} href={CTA_link} target={link_new_tab? "_blank" : "_self"}>{CTA_label}</Link>
+                        <Link className={`p-3 rounded-lg hover:scale-110 hover:shadow-xl duration-700 animate-pulse active:bg-transparent hover:border border-white shadow shadow-black mobile:mb-4`} href={CTA_link} target={link_new_tab? "_blank" : "_self"}>{CTA_label}</Link>
                     </div>
                     <Parallax scale={[0.5,1]} opacity={[0.75,1]} className="h-[40vh] flex items-center justify-center flex-1">
                         <Image className="h-[25vh] w-auto animate-pulse" src={imagem} alt={imagem_alt} />
